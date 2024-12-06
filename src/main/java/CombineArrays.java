@@ -9,6 +9,19 @@ public class CombineArrays {
      */
     public int[] combine(int[] arr1, int[] arr2){
 
-        return null;
+        int[] newArr = new int[arr1.length + arr2.length];
+        int index = 0;
+
+        for(int i = 0; i < arr1.length; i++){
+            newArr[index] = arr1[i];
+            index++;
+        }
+
+        for(int i = 0; i < arr2.length; i++){
+            newArr[index] = arr2[i];
+            index++;
+        }
+
+        return newArr;
     }
 }
